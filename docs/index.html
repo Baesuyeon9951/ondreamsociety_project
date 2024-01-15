@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ondreamsociety</title>
+
+  
+<script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"></script>
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<link rel="stylesheet" href="style/style.css">
+<script defer src="script/script.js"></script>
+
+</head>
+<body>
+  <!-- 탑바구현시작 -->
+
+<header id="top-bar">
+	<a href="#" class="logo">
+	</a>
+	<nav class="pc-menu">
+		<ul class="menu-list flex">
+			<li><span>ABOUT</span></li>
+			<li><span>SPACE</span></li>
+			<li><span>PROGRAM</span></li>
+			<li><span>FACILITIES</span></li>
+			<li><span>NEWS</span></li>
+		</ul>
+		<div class="top-bar__bg"></div>
+		<div class="depth2">
+			<ul class="depth2-list">
+				<li><a href="#">온드림 소사이어티</a></li>
+				<li><a href="#">현대차 정몽구 재단</a></li>
+				<li><a href="#">오시는길</a></li>
+			</ul>
+			<ul class="depth2-list">
+				<li><a href="#">공간 소개</a></li>
+				<li><a href="#">입주사 소개</a></li>
+			</ul>
+			<ul class="depth2-list">
+				<li><a href="#">ONSO WEEK</a></li>
+				<li><a href="#">ARCHIVE</a></li>
+				<li><a href="#">ONSO ESG COLLEGE</a></li>
+				<li><a href="#">ONSO EXPERIENCE</a></li>
+				<li><a href="#">ONSO EVENT</a></li>
+			</ul>
+			<ul class="depth2-list">
+				<li><a href="#">대관 안내 및 신청</a></li>
+			</ul>
+			<ul class="depth2-list">
+				<li><a href="#">ONSO NEWS</a></li>
+				<li><a href="#">ONSO FAQ</a></li>
+			</ul>
+		</div>
+	</nav>
+	<div class="btn-menu">
+		<button>
+			<span></span>
+			<span></span>
+			<span></span>
+		</button>
+	</div>
+	<nav class="mo-menu">
+	<ul class="menu-list">
+		<li><span>ABOUT</span>
+			<ul class="depth2-list">
+				<li><a href="#">온드림 소사이어티</a></li>
+				<li><a href="#">현대차 정몽구 재단</a></li>
+				<li><a href="#">오시는길</a></li>
+			</ul>
+		</li>
+		<li><span>SPACE</span>
+			<ul class="depth2-list">
+				<li><a href="#">공간 소개</a></li>
+				<li><a href="#">입주사 소개</a></li>
+			</ul>
+		</li>
+		<li><span>PROGRAM</span>
+			<ul class="depth2-list">
+				<li><a href="#">ONSO WEEK</a></li>
+				<li><a href="#">ARCHIVE</a></li>
+				<li><a href="#">ONSO ESG COLLEGE</a></li>
+				<li><a href="#">ONSO EXPERIENCE</a></li>
+				<li><a href="#">ONSO EVENT</a></li>
+			</ul></li>
+		<li><span>FACILITIES</span>
+			<ul class="depth2-list">
+				<li><a href="#">대관 안내 및 신청</a></li>
+			</ul>
+		</li>
+		<li><span>NEWS</span>
+			<ul class="depth2-list">
+				<li><a href="#">ONSO NEWS</a></li>
+				<li><a href="#">ONSO FAQ</a></li>
+			</ul>
+		</li>
+	</ul>
+</nav>
+</header>
+
+<!-- 메인구현시작 -->
+<div id="content">
+	<section class="main-visual">
+		<video playsinline autoplay muted loop class="video">
+			<source src="https://www.ondreamsociety.org/assets/images/main_full.mp4">
+		</video>
+
+		<div class="main-visual__content-1">
+			<div class="content-1-title">
+				<div class="content-1-title__img">
+					<img class="pc-view" src="images/onso_logo_white.svg" alt="PC로고이미지">
+					<img class="mo-view" src="images/m_onso_logo_white.svg" alt="모바일로고이미지">
+				</div>
+				<p class="title_en"> A SUSTAINABLE FUTURE 
+					<br class="mo-view">
+					FOR ALL</p>
+				<p class="title_ko">현대차 정몽구 재단의 
+					<br class="mo-view">
+					소셜 임팩트 플랫폼</p>
+			</div>
+		</div>
+
+		<div class="main-visual__content-2">
+
+			<p class="content-2__title">환경 관련 사회문제를 
+				<br class="mo-view">
+				창의적, 혁신적으로
+				<br class="mo-view">
+				해결하는 
+				<br class="mo-view">
+				커뮤니티 기반의 
+				<br class="mo-view">
+				플랫폼</p>
+			<div class="content-2__desc">
+				<p>미래 세대와 함께 환경 관련 사회문제를 창의적, 혁신적으로 해결하는
+					<br class="pc-view">
+					커뮤니티 기반의 플랫폼으로 현대차 정몽구 재단의 첫 공간 플랫폼입니다.</p>
+				<br>
+				<br>
+				<p>오픈 커뮤니티 스페이스와 소셜 임팩트를 창조하는 임팩트 스페이스로 구성되어<br class="pc-view">
+					사회혁신가를 양성하고 임팩트 비즈니스 기업들과 함께할 다양한 프로그램은
+					<br class="pc-view">
+					여러가지 환경문제를 해결하는 솔루션을 제시하게 될 것입니다.
+				</p>
+				<a href="#" class="content-2__btn">
+					공간 동영상 보기
+				</a>
+			</div>
+		</div>
+	</section>
+</div>	
+
+<!-- 두번째 섹션 구현 시작 -->
+<section class="space-section">
+	<div class="space-title">
+		<span>ONDREAM SOCIETY /// SPACE</span>
+	</div>
+	<div class="space-content">
+		<ul class="space-list flex">
+			<li class="space-item space-item-1">
+				<a class="space-link" href="#">
+					<div class="space-imgbox">
+						<img src="images/community_space_thumb.jpg" alt="">
+					</div>
+					<div class="space-textbox">
+						<p class="title">
+							대중과 함께 공유하고 소통하는<br>
+							복합문화 공간, 커뮤니티 스페이스
+							<span>1F</span>
+						</p>
+						<p class="desc">
+							온드림 소사이어티 1층 커뮤니티 스페이스는 대중이 모여 지식과 경험을 공유하기 위해 다양한 활동을 할 수 있는 공간입니다.
+						</p>
+					</div>
+				</a>
+				<a class="rental-btn" href="#">
+					1층 공간 대관하기
+				</a>
+			</li>
+			<li class="space-item space-item-2">
+				<a class="space-link" href="#">
+					<div class="space-imgbox">
+						<img src="images/impact_space_thumb.jpg" alt="">
+					</div>
+					<div class="space-textbox">
+						<p class="title">
+							친환경 소셜 벤처와 함께 임팩트를 창출하는<br>
+							오피스 공간, 임팩트 스페이스
+							<span>6F</span>
+						</p>
+						<p class="desc">
+							온드림소사이어티 6층 임팩트 스페이스는 친환경 소셜 벤처들이 함께 지속가능한 환경문제 솔루션을 찾는 임팩트 공간입니다
+						</p>
+					</div>
+				</a>
+			</li>
+		</ul>
+	</div>
+	
+<!-- 하단바 구현 시작 -->
+	<footer class="bottom-bar">
+	<div class="inner">
+		<p class="copywriter">2022.ONDREAM SOCIETY</p>
+		<div class="etc-list">
+			<span>(재)현대차 정몽구 재단</span>
+			<span>고유번호: 101-82-15971</span>
+			<span>법인등록번호: 110122-0045013</span>
+			<span>03058 서울시 종로구 율곡로 75, 현대빌딩 3층</span>
+		</div>
+		<div class="sns-list">
+			<ul class="flex">
+				<li><a href="#"><img src="images/facebook.svg" alt=""></a></li>
+				<li><a href="#"><img src="images/instagram.svg" alt=""></a></li>
+				<li><a href="#"><img src="images/youtube.svg" alt=""></a></li>
+			</ul>
+		</div>
+	</div>
+
+</footer>
+</section>
+</body>
+</html>
